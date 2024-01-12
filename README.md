@@ -20,6 +20,7 @@ A repo having skeleton of all KDU assignments, homework and assessment submissio
 ## Instructions for submitting homework(exercise), assessments or assignments
 For both the Backend and frontend tracks, you'll have 3 assignments, 2 assessments and close to ~20 homeworks to be submitted.
 
+
 For any homework(exercise) or assessment or assignment Pull Request that you create, follow the below guidelines:
 
 - Create a new branch named `homework-<homework-no>` for homeworks, `assessment-<homework-no>` for assessments or `assignment-<homework-no>` for assignments (whichever is the case), which is based out of origin/main. example, `homework-1`, `homework-2`, etc.
