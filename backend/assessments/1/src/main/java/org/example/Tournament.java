@@ -31,8 +31,8 @@ public class Tournament {
 //                }
 //            }
                 for(int j=0;j<players.size();j++){
-                    if(players.get(j).getTeam()==team){
-                        topScore.add({players.get(j).getRuns(),players.get(j).getName()});
+                    if(players.get(j).getTeam().equals(team)){
+//                        topScore.add(players.get(j).getRuns(),players.get(j).getName());
                     }
 
             }
