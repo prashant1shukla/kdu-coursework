@@ -1,4 +1,3 @@
-// components/TransactionList.tsx
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { Transaction } from "../../types/Transaction";
@@ -123,19 +122,10 @@ const getTime = (time: string): string => {
 };
 
 const formatDate = (dateString: string): string => {
-  // Split the date string into day, month, and year
   const [day, month, year] = dateString.split("/").map(Number);
-
-  // Create a new Date object
   const date = new Date(year, month - 1, day);
-
-  // Get the month name from the Date object
   const monthName = date.toLocaleString("en-US", { month: "short" });
-
-  // Get the day of the month
   const formattedDay = date.getDate();
-
-  // Return the formatted date string
   return `${monthName} ${formattedDay} ${year}`;
 };
 
