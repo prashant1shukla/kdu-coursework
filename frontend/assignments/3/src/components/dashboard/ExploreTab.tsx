@@ -19,6 +19,8 @@ import { Link } from "react-router-dom";
 import Pagination from "@mui/material/Pagination"; 
 import add from "../../assets/add.png";
 import added from "../../assets/added.png";
+import cross from "../../assets/cross.png";
+
 import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
@@ -54,6 +56,13 @@ const useStyles = createUseStyles({
     "& .Mui-disabled": {
       color: "#aaa",
       border: "2px solid #F8F9FA",
+    },
+  },
+  button2: {
+    '&:hover': {
+      '& img': {
+        content: `url(${cross})`,
+      },
     },
   },
 });
@@ -134,11 +143,15 @@ const ExploreTab: React.FC = () => {
                         onClick={() =>
                           handleRemoveFromWatchList(stock.stock_symbol)
                         }
+                        className={classes.button2}
                       >
                         <img src={added} alt="Added" />
                       </Button>
                     ) : (
-                      <Button onClick={() => handleAddToWatchList(stock)}>
+                      <Button
+                        onClick={() => handleAddToWatchList(stock)}
+                        className={classes.button}
+                      >
                         <img src={add} alt="Add" />
                       </Button>
                     )}

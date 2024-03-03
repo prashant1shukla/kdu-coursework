@@ -16,6 +16,8 @@ import { Stock } from "../../types/Stock";
 import { createUseStyles } from "react-jss";
 import Pagination from "@mui/material/Pagination";
 import added from "../../assets/added.png";
+import cross from "../../assets/cross.png";
+
 
 
 const useStyles = createUseStyles({
@@ -51,6 +53,13 @@ const useStyles = createUseStyles({
     "& .Mui-disabled": {
       color: "#aaa",
       border: "2px solid #F8F9FA",
+    },
+  },
+  button2: {
+    '&:hover': {
+      '& img': {
+        content: `url(${cross})`,
+      },
     },
   },
 });
@@ -108,6 +117,7 @@ const WatchListTab: React.FC = () => {
                           onClick={() =>
                             handleRemoveFromWatchList(stock.stock_symbol)
                           }
+                          className={classes.button2}
                         >
                           <img src={added} alt="Added" />
                         </Button>

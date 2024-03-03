@@ -3,7 +3,7 @@ import DashboardHeader from "../navbar/DashboardHeader";
 import DashboardPage from "../pages/DashboardPage";
 import StockPage from "../pages/StockPage";
 import PortfolioPage from "../pages/PortfolioPage";
-import { SummarizerPage } from "../pages/SummarizerPage";
+import SummarizerPage  from "../pages/SummarizerPage";
 
 export function KDUStockMarket() {
   return (
