@@ -1,0 +1,47 @@
+body{
+    padding:0;
+    margin: 0;
+    background-image: url("bg.jpg");
+}
+.header{
+    background-color: rgb(25, 25, 211);
+    color:whitesmoke;
+}
+.heading{
+    padding: 20px;
+    margin-top: 0;
+}
+.footer{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.sub-footer{
+    display: flex;
+    align-items: center;
+
+}
+.input{
+    background-color: rgb(200, 152, 255);
+    color: black;
+    padding: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-radius: 10px;
+}
+.divOne{
+    display: flex;
+    align-items: center;
+}
+.divTwo{
+    padding: 20px;
+}
+.divThree{
+    background-color: greenyellow;
+    border-radius: 10px;
+    padding-left:15px;
+    padding-right: 15px;
+}
