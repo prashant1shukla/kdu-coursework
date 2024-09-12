@@ -1,0 +1,37 @@
+.quote-btn{
+  background-color: #FFE3CA;
+  margin-top: 20px;
+  padding:20px;
+  border: 0px;
+  color:rgb(0, 0, 165);
+  font-weight: 700;
+}
+.filter{
+  border: 0;
+  margin-top: 20px;
+}
+
+.tags{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.tag{
+  display: flex;
+  flex-direction: row;
+  background-color: #EE99C2;
+  padding: 10px;
+  color:#000;
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 15px;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.line{
+  border: 1px solid #a7a7a7;
+}
+.cross{
+  margin-left: 5px;
+}
