@@ -1,0 +1,18 @@
+.profile-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 40px;
+    background-color: #FFEC99;
+    height: 100vh;
+    border: 1px solid black;
+
+}
+
+.header {
+    text-align: left;
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+}
